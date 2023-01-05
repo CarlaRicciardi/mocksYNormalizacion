@@ -5,12 +5,11 @@ function generateFakeProducts(n) {
   let fakeProducts = [];
   for (let index = 0; index < n; index++) {
     const fakeProduct = {
-      fakeTitle: faker.commerce.product(),
-      fakePrice: faker.commerce.price(10, 10000),
-      fakeThumbnail: faker.image.abstract(200, 200, true),
+      title: faker.commerce.product(),
+      price: faker.commerce.price(10, 10000),
+      thumbnail: faker.image.abstract(200, 200, true),
     };
     fakeProducts.push(fakeProduct);
-    console.log(fakeProduct);
   }
   return fakeProducts;
 }

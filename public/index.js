@@ -41,7 +41,6 @@ const renderProdTest = (data) => {
   document.getElementById('fakeProducts').innerHTML = html;
 };
 
-
 //4) atrapar desde el front el array de productos actualizado
 socket.on('products', (data) => {
   render(data);
@@ -49,9 +48,6 @@ socket.on('products', (data) => {
 socket.on('prod-test', (data) => {
   renderProdTest(data);
 });
-
-
-
 
 //chat
 const fyh = new Date().toLocaleDateString() + new Date().toTimeString();
